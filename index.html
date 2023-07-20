@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tabela</title>
+        <meta charset="UFT-8"/>
+
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border: 2px solid rgb(235, 86, 136)
+            }
+
+            thead{
+                font-weight: bold;
+                text-align: center;
+                background-color: lightpink;
+            }
+
+            tbody{
+                text-align: center;
+            }
+
+            tfoot {
+                background-color: lightpink;
+                font-size: 10pt;
+                color:black
+            }
+
+            tr, th, td {
+                border: 2px solid rgb(235, 86, 136) 
+            }
+
+            caption{
+                caption-side: bottom;
+            }
+
+            tbody tr:nth-child(even){
+                background-color: rgb(243, 211, 216);
+            }
+
+            tbody tr:nth-child(odd){
+                background-color: #f38c9c ;
+            }
+
+            tbody tr:hover{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table border="1">
+            <caption>Tabela 1. Relação do Clientes do Magic Company.</caption>
+            <thead>
+                <tr>
+                    <td rowspan="2">Nome</td>
+                    <td rowspan="2">Telefone</td>
+                    <td colspan="5">Endereço</td> 
+                </tr>
+
+                <tr>
+                    <td>Rua</td>
+                    <td>Número</td>
+                    <td>Cidade</td>
+                    <td>Estado</td>
+                    <td>CEP</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Gabriel</td>
+                    <td>55 13 99900-9999</td>
+                    <td>Rua Pau Brasil</td>
+                    <td>321</td>
+                    <td>Bragança Inglesa</td>
+                    <td>São Paulo</td>
+                    <td>1000-0000</td>
+                </tr>
+    
+                <tr>
+                    <td>Felipe</td>
+                    <td>55 18 99900-9999</td>
+                    <td>Rua Coração Ardente</td> 
+                    <td>123</td>  
+                    <td>Campos Rosados</td>
+                    <td>Maceió</td>
+                    <td>2222-2222</td>
+                </tr>
+    
+                <tr>
+                    <td>Laura</td>
+                    <td>55 23 99900-9999</td>
+                    <td>Avenida Coelhinho Raivozo</td> 
+                    <td>213</td>  
+                    <td>Toca do Leão</td>
+                    <td>Paraná</td>
+                    <td>9999-9999</td>  
+                </tr>
+    
+                <tr>
+                    <td>Brenda</td>
+                    <td>55 10 99900-9999</td>
+                    <td>Rua Montanha Roxa</td>
+                    <td>231</td>  
+                    <td>Juis de Fora</td>
+                    <td>Minas Gerais</td>
+                    <td>7777-7777</td> 
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="7">Para mais informações, entre em contato conosco.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
